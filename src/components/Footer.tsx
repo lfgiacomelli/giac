@@ -11,9 +11,8 @@ const footerLinks = [
 ];
 
 const socialLinks = [
-  { icon: Linkedin, href: '#', label: 'LinkedIn' },
-  { icon: Github, href: '#', label: 'GitHub' },
-  { icon: Instagram, href: '#', label: 'Instagram' },
+  { icon: Linkedin, href: 'https://linkedin.com/in/lfgiacomellirodrigues/', label: 'LinkedIn' },
+  { icon: Github, href: 'https://github.com/lfgiacomelli', label: 'GitHub' },
 ];
 
 export const Footer = () => {
@@ -44,6 +43,7 @@ export const Footer = () => {
               {socialLinks.map((social) => (
                 <a
                   key={social.label}
+                  target='_blank'
                   href={social.href}
                   aria-label={social.label}
                   className="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-secondary/80 transition-colors"
@@ -61,6 +61,7 @@ export const Footer = () => {
                 <li key={link.label}>
                   <a
                     href={link.href}
+                    target='_blank'
                     onClick={(e) => handleNavClick(e, link.href)}
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
