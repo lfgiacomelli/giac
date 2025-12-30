@@ -1,5 +1,5 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import { Globe, Layers, Cloud, Smartphone, Plug, ArrowUpRight } from 'lucide-react';
+import { Globe, Layers, Cloud, Smartphone, Plug, ArrowUpRight, BotIcon } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const services = [
@@ -21,12 +21,17 @@ const services = [
   {
     icon: Smartphone,
     title: 'Aplicações Mobile',
-    description: 'Apps nativos e híbridos para iOS e Android com experiência de usuário excepcional.',
+    description: 'Aplicativos móveis para plataforma Android com experiência de usuário excepcional.',
   },
   {
     icon: Plug,
     title: 'Integrações e APIs',
     description: 'Conectamos sistemas e desenvolvemos APIs robustas para sua infraestrutura.',
+  },
+  {
+    icon: BotIcon,
+    title: 'Automações',
+    description: 'Desenvolvemos automações de atendimento em aplicativos como Telegram.',
   },
 ];
 
@@ -36,7 +41,6 @@ export const ServicesSection = () => {
 
   return (
     <section id="servicos" className="py-24 lg:py-32 bg-secondary/30 relative overflow-hidden">
-      {/* Background Pattern */}
       <div
         className="absolute inset-0 opacity-[0.015]"
         style={{
@@ -46,7 +50,6 @@ export const ServicesSection = () => {
       />
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
-        {/* Header */}
         <div
           ref={headerRef}
           className={cn(
@@ -67,7 +70,6 @@ export const ServicesSection = () => {
           </p>
         </div>
 
-        {/* Services Grid */}
         <div
           ref={cardsRef}
           className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
@@ -81,12 +83,10 @@ export const ServicesSection = () => {
               )}
               style={{ transitionDelay: `${index * 100}ms` }}
             >
-              {/* Icon */}
               <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
                 <service.icon className="w-7 h-7 text-primary" />
               </div>
 
-              {/* Content */}
               <h3 className="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">
                 {service.title}
               </h3>
@@ -94,7 +94,6 @@ export const ServicesSection = () => {
                 {service.description}
               </p>
 
-              {/* Arrow */}
               <div className="absolute top-8 right-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <ArrowUpRight className="w-5 h-5 text-primary" />
               </div>

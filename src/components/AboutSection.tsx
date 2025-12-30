@@ -31,12 +31,10 @@ export const AboutSection = () => {
 
   return (
     <section id="quem-somos" className="py-24 lg:py-32 relative overflow-hidden">
-      {/* Background */}
       <div className="absolute inset-0 bg-gradient-glow opacity-30" />
       
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Text Content */}
           <div
             ref={sectionRef}
             className={cn(
@@ -63,7 +61,6 @@ export const AboutSection = () => {
             </p>
           </div>
 
-          {/* Feature Cards */}
           <div
             ref={cardsRef}
             className="grid sm:grid-cols-2 gap-6"

@@ -1,5 +1,7 @@
 import { Code2, Linkedin, Github, Instagram } from 'lucide-react';
 
+import giac from '../assets/images/giac.png';
+
 const footerLinks = [
   { label: 'Início', href: '#inicio' },
   { label: 'Quem Somos', href: '#quem-somos' },
@@ -25,29 +27,19 @@ export const Footer = () => {
 
   return (
     <footer className="bg-card border-t border-border py-16">
-      <div className="container mx-auto px-4 lg:px-8">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-          {/* Brand */}
+      <div className="container mx-auto px-4">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-20 mb-12">
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">G</span>
-              </div>
               <div className="flex flex-col">
-                <span className="text-foreground font-bold text-lg tracking-tight">
-                  GIAC
-                </span>
-                <span className="text-muted-foreground text-[10px] tracking-widest uppercase -mt-1">
-                  Software Development
-                </span>
+                <img src={giac} />
               </div>
             </div>
             <p className="text-muted-foreground max-w-md mb-6">
-              Transformamos ideias em soluções digitais inovadoras. 
-              Desenvolvimento de software sob medida para empresas que 
+              Transformamos ideias em soluções digitais inovadoras.
+              Desenvolvimento de software sob medida para empresas que
               buscam excelência e resultados.
             </p>
-            {/* Social Links */}
             <div className="flex items-center gap-4">
               {socialLinks.map((social) => (
                 <a
@@ -62,7 +54,6 @@ export const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
           <div>
             <h4 className="font-semibold mb-4">Links Rápidos</h4>
             <ul className="space-y-3">
@@ -80,18 +71,34 @@ export const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact */}
           <div>
             <h4 className="font-semibold mb-4">Contato</h4>
             <ul className="space-y-3 text-muted-foreground">
-              <li>contato@giac.dev</li>
-              <li>+55 (11) 99999-9999</li>
+              <li className="text-sm text-white ">E-mail Desenvolvedor | Marketing</li>
+              <li className="flex flex-wrap items-center gap-1 text-sm">
+                <a
+                  href="mailto:lfgiacomellirodrigues@gmail.com"
+                  className="hover:text-primary transition-colors whitespace-nowrap"
+                >
+                  lfgiacomellirodrigues@gmail.com
+                </a>
+                <span className="text-muted-foreground">|</span>
+                <a
+                  href="mailto:matheuseducarvalhosant@gmail.com"
+                  className="hover:text-primary transition-colors whitespace-nowrap"
+                >
+                  matheuseducarvalhosant@gmail.com
+                </a>
+              </li>
+
+
+              <li className="text-sm text-white ">Telefone Desenvolvedor | Marketing</li>
+              <li className="font-medium">(18) 98197-1147 | (18) 99115-1383</li>
               <li>São Paulo, Brasil</li>
             </ul>
           </div>
         </div>
 
-        {/* Bottom */}
         <div className="pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-muted-foreground text-sm">
             © {new Date().getFullYear()} GIAC Software Development. Todos os direitos reservados.
