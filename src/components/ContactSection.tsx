@@ -90,52 +90,8 @@ export const ContactSection = () => {
             <div className="space-y-6">
               <ContactItem icon={Mail} label="E-mail" value="lfgiacomellirodrigues@gmail.com" />
               <ContactItem icon={Phone} label="Telefone" value="(18) 98197-1147" />
-              <ContactItem icon={MapPin} label="Localização" value="Presidente Prudente - SP" />
+              <ContactItem icon={MapPin} label="Localização" value="Piquerobi - SP" />
             </div>
-          </div>
-
-          <div
-            ref={formRef}
-            className={cn(
-              'relative transition-all duration-700',
-              formVisible
-                ? 'opacity-100 translate-x-0'
-                : 'opacity-0 translate-x-10'
-            )}
-          >
-            <Lottie
-              animationData={techStartupAnimation}
-              loop
-              className="
-    hidden lg:block
-    absolute
-    -top-24
-    -right-40
-    w-96
-    opacity-40
-    pointer-events-none
-  "
-            />
-
-
-            <form
-              onSubmit={handleSubmit}
-              className="glass rounded-2xl p-8 space-y-4 relative z-10"
-            >
-              <Input name="name" placeholder="Seu nome" value={formData.name} onChange={e => setFormData({ ...formData, name: e.target.value })} />
-              {errors.name && <p className="text-sm text-destructive">{errors.name}</p>}
-
-              <Input name="email" type="email" placeholder="Seu e-mail" value={formData.email} onChange={e => setFormData({ ...formData, email: e.target.value })} />
-              {errors.email && <p className="text-sm text-destructive">{errors.email}</p>}
-
-              <Textarea name="message" placeholder="Sua mensagem" rows={4} value={formData.message} onChange={e => setFormData({ ...formData, message: e.target.value })} />
-              {errors.message && <p className="text-sm text-destructive">{errors.message}</p>}
-
-              <Button type="submit" disabled={isSubmitting} className="w-full gap-2">
-                {isSubmitting ? 'Enviando...' : 'Enviar Mensagem'}
-                <Send className="w-4 h-4" />
-              </Button>
-            </form>
           </div>
         </div>
       </div>

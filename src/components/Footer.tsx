@@ -75,7 +75,7 @@ export const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Contato</h4>
             <ul className="space-y-3 text-muted-foreground">
-              <li className="text-sm text-white ">E-mail Desenvolvedor | Marketing</li>
+              <li className="text-sm text-white ">E-mail</li>
               <li className="flex flex-wrap items-center gap-1 text-sm">
                 <a
                   href="mailto:lfgiacomellirodrigues@gmail.com"
@@ -83,18 +83,11 @@ export const Footer = () => {
                 >
                   lfgiacomellirodrigues@gmail.com
                 </a>
-                <span className="text-muted-foreground">|</span>
-                <a
-                  href="mailto:matheuseducarvalhosant@gmail.com"
-                  className="hover:text-primary transition-colors whitespace-nowrap"
-                >
-                  matheuseducarvalhosant@gmail.com
-                </a>
               </li>
 
 
-              <li className="text-sm text-white ">Telefone Desenvolvedor | Marketing</li>
-              <li className="font-medium">(18) 98197-1147 | (18) 99115-1383</li>
+              <li className="text-sm text-white ">Telefone</li>
+              <li className="font-medium">(18) 98197-1147</li>
               <li>São Paulo, Brasil</li>
             </ul>
           </div>
