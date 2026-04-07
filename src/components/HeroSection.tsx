@@ -7,8 +7,10 @@ import {
   Smartphone,
   Server,
   Braces,
-  Database
+  Database,
+  Tag
 } from 'lucide-react';
+
 
 import giac from '../assets/images/giac.png';
 
@@ -42,6 +44,10 @@ export const HeroSection = () => {
       name: "MySQL",
       icon: Database,
     },
+    {
+      name: "MetaAds",
+      icon: Tag
+    }
   ];
   return (
     <section
@@ -80,18 +86,16 @@ export const HeroSection = () => {
             </span>
           </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-6 animate-fade-in delay-100">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-snug mb-6 animate-fade-in delay-100">
             Desenvolvimento de{' '}
             <span className="text-gradient">Software</span>
             <br />
-            Sob Medida
+            Gestão de Tráfego & Marketing
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-in delay-200">
-            Criamos sistemas personalizados, aplicações SaaS e soluções digitais
-            modernas que impulsionam o crescimento do seu negócio.
+            Unimos tecnologia, tráfego pago e marketing digital para criar soluções completas que geram crescimento real, previsível e escalável para sua empresa.
           </p>
-
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in delay-300">
             <Button
               variant="hero"

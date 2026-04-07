@@ -8,6 +8,7 @@ import giac from '../assets/images/giac.png';
 const navLinks = [
   { href: '#inicio', label: 'Início' },
   { href: '#quem-somos', label: 'Quem Somos' },
+  { href: '#marketing', label: 'Marketing' },
   { href: '#servicos', label: 'Serviços' },
   { href: '#equipe', label: 'Equipe' },
   { href: '#projetos', label: 'Projetos' },

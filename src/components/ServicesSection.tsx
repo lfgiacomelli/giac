@@ -1,5 +1,5 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import { Globe, Layers, Cloud, Smartphone, Plug, ArrowUpRight, BotIcon } from 'lucide-react';
+import { Globe, Layers, Cloud, Smartphone, Plug, ArrowUpRight, BotIcon, PhoneOff } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const services = [
@@ -14,25 +14,15 @@ const services = [
     description: 'Soluções personalizadas para automatizar e otimizar os processos do seu negócio.',
   },
   {
-    icon: Cloud,
-    title: 'Plataformas SaaS',
-    description: 'Desenvolvimento de produtos SaaS escaláveis e prontos para o mercado.',
-  },
-  {
     icon: Smartphone,
     title: 'Aplicações Mobile',
     description: 'Aplicativos móveis para plataforma Android com experiência de usuário excepcional.',
   },
   {
     icon: Plug,
-    title: 'Integrações e APIs',
-    description: 'Conectamos sistemas e desenvolvemos APIs robustas para sua infraestrutura.',
-  },
-  {
-    icon: BotIcon,
-    title: 'Automações',
-    description: 'Desenvolvemos automações de atendimento em aplicativos como Telegram.',
-  },
+    title: 'Marketing | Gestão de tráfego e Redes Sociais',
+    description: 'Estratégias de marketing digital para aumentar a visibilidade e o engajamento da sua marca.',
+  }
 ];
 
 export const ServicesSection = () => {

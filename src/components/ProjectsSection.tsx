@@ -7,7 +7,7 @@ import copybus from '../assets/images/copybus.png';
 import beachduo from '../assets/images/beachduo.png';
 import pdv from '../assets/images/caixa-egs.png';
 
-const projects = [
+const projects = [                                                                                         
   {
     title: 'ZoomX – Plataforma para Gerenciamento e Solicitação de Mototáxi',
     image: zoomx,

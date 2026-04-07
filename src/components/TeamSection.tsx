@@ -1,6 +1,6 @@
 import { cn } from '@/lib/utils';
 
-import luisFelipe from '../assets/images/luis_felipe.png';
+import luisFelipe from '../assets/images/luis_felipe.jpg';
 
 export const TeamSection = () => {
     return (
@@ -8,12 +8,10 @@ export const TeamSection = () => {
             id="equipe"
             className="relative py-24 lg:py-32 overflow-hidden bg-gradient-hero"
         >
-            {/* Background effects */}
             <div className="absolute top-1/3 left-1/4 w-[480px] h-[480px] bg-primary/5 rounded-full blur-[140px]" />
             <div className="absolute bottom-1/4 right-1/4 w-[380px] h-[380px] bg-primary/10 rounded-full blur-[120px]" />
 
             <div className="container mx-auto px-4 lg:px-8 relative z-10">
-                {/* Header */}
                 <div className="text-center max-w-3xl mx-auto mb-20">
                     <span className="text-primary text-sm font-semibold tracking-widest uppercase mb-4 block">
                         Fundador
@@ -28,9 +26,7 @@ export const TeamSection = () => {
                     </p>
                 </div>
 
-                {/* Profile */}
                 <div className="flex flex-col lg:flex-row items-center gap-14 justify-center">
-                    {/* Avatar */}
                     <div className="relative">
                         <div className="absolute inset-0 rounded-full border-2 border-dashed border-primary/40 animate-spin-slow" />
 
@@ -43,7 +39,6 @@ export const TeamSection = () => {
                         </div>
                     </div>
 
-                    {/* Info */}
                     <div className="max-w-xl text-center lg:text-left">
                         <h3 className="text-2xl md:text-3xl font-semibold mb-2">
                             Luís Felipe Giacomelli Rodrigues

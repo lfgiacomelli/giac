@@ -87,10 +87,20 @@ export const ContactSection = () => {
               entender suas necessidades e propor a melhor solução.
             </p>
 
-            <div className="space-y-6">
+            <div className="space-y-6 mb-10">
               <ContactItem icon={Mail} label="E-mail" value="lfgiacomellirodrigues@gmail.com" />
               <ContactItem icon={Phone} label="Telefone" value="(18) 98197-1147" />
               <ContactItem icon={MapPin} label="Localização" value="Piquerobi - SP" />
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button
+                variant="hero"
+                className="w-full sm:w-auto"
+                onClick={() => window.open('https://wa.me/5518981971147', '_blank')}
+              >
+                Falar no WhatsApp
+              </Button>
             </div>
           </div>
         </div>
